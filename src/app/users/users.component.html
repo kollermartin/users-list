@@ -1,7 +1,9 @@
-<div *ngIf="isLoading$ | async">Loading...</div>
+<section class="users">
+  <div *ngIf="isLoading$ | async">Loading...</div>
 
-<div *ngIf="error$ | async as error">{{error}}</div>
+  <div *ngIf="error$ | async as error">{{error}}</div>
 
-<ng-container *ngIf="users$ | async as users">
-  <app-users-list [users]="users"></app-users-list>
-</ng-container>
+  <ng-container *ngIf="users$ | async as users">
+    <app-users-list [users]="users"></app-users-list>
+  </ng-container>
+</section>

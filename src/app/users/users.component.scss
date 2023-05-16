@@ -1,0 +1,16 @@
+.users {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: [full-start] 15rem [center-start] repeat(8, 1fr) [center-end] 15rem [full-end];
+  align-content: center;
+
+  & > * {
+    grid-column: center-start / center-end;
+    text-align: center;
+
+    @media only screen and (max-width: 75em ) { //1200px / 16 = 75em
+      grid-column: full-start / full-end;
+      padding: 0 2rem;
+    }
+  }
+}
