@@ -2,8 +2,9 @@ import {Component, OnInit} from '@angular/core';
 import {Store} from "@ngrx/store";
 import * as UsersActions from './state/users.actions';
 import {Observable} from "rxjs";
-import {AppState, errorSelector, isLoadingSelector, usersSelector} from "./state/users.selectors";
+import {errorSelector, isLoadingSelector, usersSelector} from "./state/users.selectors";
 import {User} from "./data/schema/users";
+import {AppState} from "../shared/app-state";
 
 
 @Component({
