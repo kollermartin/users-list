@@ -1,3 +1,8 @@
+export interface UsersState {
+  isLoading: boolean;
+  users: User[]
+}
+
 export interface User {
   id: number;
   name: string;
