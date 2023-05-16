@@ -8,6 +8,8 @@ import {EffectsModule} from "@ngrx/effects";
 import {UsersComponent} from './users/users.component';
 import {UsersListComponent} from './users/users-list/users-list.component';
 import {HttpClientModule} from "@angular/common/http";
+import {usersReducer} from "./users/state/users.reducer";
+import {UsersEffects} from "./users/state/users.effects";
 
 @NgModule({
   declarations: [
@@ -19,8 +21,8 @@ import {HttpClientModule} from "@angular/common/http";
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    StoreModule.forRoot({}),
-    EffectsModule.forRoot()
+    StoreModule.forRoot({users: usersReducer}),
+    EffectsModule.forRoot([UsersEffects])
   ],
   providers: [],
   bootstrap: [AppComponent]
