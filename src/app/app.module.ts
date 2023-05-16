@@ -7,6 +7,7 @@ import {StoreModule} from '@ngrx/store';
 import {EffectsModule} from "@ngrx/effects";
 import {UsersComponent} from './users/users.component';
 import {UsersListComponent} from './users/users-list/users-list.component';
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import {UsersListComponent} from './users/users-list/users-list.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     StoreModule.forRoot({}),
     EffectsModule.forRoot()
   ],
