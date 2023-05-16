@@ -5,10 +5,14 @@ import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {StoreModule} from '@ngrx/store';
 import {EffectsModule} from "@ngrx/effects";
+import {UsersComponent} from './users/users.component';
+import {UsersListComponent} from './users/users-list/users-list.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    UsersComponent,
+    UsersListComponent
   ],
   imports: [
     BrowserModule,
