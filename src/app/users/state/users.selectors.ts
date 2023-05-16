@@ -1,9 +1,5 @@
-import {UsersState} from "../data/schema/users";
 import {createSelector} from "@ngrx/store";
-
-export interface AppState {
-  users: UsersState
-}
+import {AppState} from "../../shared/app-state";
 
 export const selectFeature = (state: AppState) => state.users;
 export const isLoadingSelector = createSelector(selectFeature, state => state.isLoading);
