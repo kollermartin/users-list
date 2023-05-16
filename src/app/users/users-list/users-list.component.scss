@@ -31,7 +31,7 @@
 
     @media only screen and (max-width: $bp-small ) {
       grid-column: 1 / -1;
-      border: 1px solid black;
+      border: $border-black;
       border-bottom: none;
 
       &:last-child {
