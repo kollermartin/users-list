@@ -30,9 +30,14 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/main.scss"
             ],
-            "scripts": []
+            "scripts": [],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "src/styles"
+              ]
+            }
           },
           "configurations": {
             "production": {
@@ -93,7 +98,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/main.scss"
             ],
             "scripts": []
           }
