@@ -1,27 +1,72 @@
-# UsersList
+# Users List Angular App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
+This is the Users List Angular v15 application.
 
-## Development server
+## Table of Contents
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- [Installation](#installation)
+- [Usage](#usage)
+- [Scripts](#scripts)
+- [Dependencies](#dependencies)
+- [Dev Dependencies](#dev-dependencies)
 
-## Code scaffolding
+## Installation
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+To get started with the Users List Angular app, follow these steps:
 
-## Build
+1. Clone the repository: `git clone https://github.com/kollermartin/users-list.git`
+2. Navigate to the project directory: `cd users-list`
+3. Install the dependencies: `npm install`
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Usage
 
-## Running unit tests
+Once the installation is complete, you can use the following commands to run and build the app:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- `npm start`: Launches the development server and opens the app in your default browser.
+- `npm run build`: Builds the app for production in the `dist/` directory.
+- `npm run watch`: Builds the app and watches for changes in the development mode.
+- `npm test`: Runs the tests for the app using Jest.
+- `npm run test:watch`: Runs the tests in watch mode.
+- `npm run test:coverage`: Runs the tests and generates a code coverage report.
 
-## Running end-to-end tests
+## Scripts
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+The following scripts are available for this Angular app:
 
-## Further help
+- `ng`: Command-line interface for Angular development.
+- `start`: Starts the development server.
+- `build`: Builds the app for production.
+- `watch`: Builds the app and watches for changes in the development mode.
+- `test`: Runs the tests using Jest.
+- `test:watch`: Runs the tests in watch mode.
+- `test:coverage`: Runs the tests and generates a code coverage report.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Dependencies
+
+The app relies on the following dependencies:
+
+- `@angular/animations`: Angular animations library.
+- `@angular/common`: Angular common library.
+- `@angular/compiler`: Angular compiler library.
+- `@angular/core`: Angular core library.
+- `@angular/forms`: Angular forms library.
+- `@angular/platform-browser`: Angular browser platform library.
+- `@angular/platform-browser-dynamic`: Angular browser dynamic platform library.
+- `@angular/router`: Angular router library.
+- `@ngrx/effects`: NGRX effects library.
+- `@ngrx/store`: NGRX store library.
+- `rxjs`: Reactive Extensions for JavaScript.
+- `tslib`: TypeScript helper library.
+- `zone.js`: Zone.js library for managing asynchronous operations.
+
+## Dev Dependencies
+
+The app utilizes the following dev dependencies:
+
+- `@angular-devkit/build-angular`: Angular build tools for development.
+- `@angular/cli`: Angular command-line interface.
+- `@angular/compiler-cli`: Angular compiler CLI.
+- `@types/jest`: TypeScript definitions for Jest.
+- `jest`: JavaScript testing framework.
+- `jest-preset-angular`: Jest preset for Angular projects.
+- `typescript`: TypeScript language support.
