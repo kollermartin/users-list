@@ -6,7 +6,7 @@ import {catchError, exhaustMap, map, of} from "rxjs";
 
 @Injectable()
 export class UsersEffects {
-  getPosts$ = createEffect(() =>
+  getUsers$ = createEffect(() =>
     this._actions$.pipe(
       ofType(UsersActions.getUsers),
       exhaustMap(() => {
