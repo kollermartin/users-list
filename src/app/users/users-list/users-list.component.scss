@@ -2,7 +2,7 @@
 
 .users-list {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, minmax(max-content, 1fr));
   padding: 1rem;
 
   &__heading {

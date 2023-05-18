@@ -1,6 +1,12 @@
+@import "abstracts/variables";
+
 .container {
   display: grid;
   grid-template-columns: [full-start] 15rem [center-start] repeat(8, 1fr) [center-end] 15rem [full-end];
   text-align: center;
   height: 100vh;
+
+  @media only screen and (max-width: $bp-large) {
+    grid-template-columns: [center-start] repeat(8, 1fr) [center-end];
+  }
 }

@@ -3,9 +3,4 @@
 .users {
   grid-column: center-start / center-end;
   align-self: center;
-
-  @media only screen and (max-width: $bp-large) {
-    grid-column: full-start / full-end;
-    padding: 0 2rem;
-  }
 }

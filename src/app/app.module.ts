@@ -10,12 +10,16 @@ import {UsersListComponent} from './users/users-list/users-list.component';
 import {HttpClientModule} from "@angular/common/http";
 import {usersReducer} from "./users/state/users.reducer";
 import {UsersEffects} from "./users/state/users.effects";
+import { PostsComponent } from './posts/posts.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UsersComponent,
-    UsersListComponent
+    UsersListComponent,
+    PostsComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
