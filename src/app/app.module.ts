@@ -12,6 +12,8 @@ import {usersReducer} from "./users/state/users.reducer";
 import {UsersEffects} from "./users/state/users.effects";
 import { PostsComponent } from './posts/posts.component';
 import { HomeComponent } from './home/home.component';
+import {postsReducer} from "./posts/state/posts.reducer";
+import {PostsEffect} from "./posts/state/posts.effect";
 
 @NgModule({
   declarations: [
@@ -25,8 +27,8 @@ import { HomeComponent } from './home/home.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    StoreModule.forRoot({users: usersReducer}),
-    EffectsModule.forRoot([UsersEffects])
+    StoreModule.forRoot({users: usersReducer, posts: postsReducer}),
+    EffectsModule.forRoot([UsersEffects, PostsEffect])
   ],
   providers: [],
   bootstrap: [AppComponent]
