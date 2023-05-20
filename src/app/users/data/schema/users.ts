@@ -1,6 +1,7 @@
 export interface UsersState {
   isLoading: boolean;
   users: User[],
+  selectedUser?: User,
   error: string;
 }
 

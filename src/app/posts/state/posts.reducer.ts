@@ -13,5 +13,5 @@ export const postsReducer = createReducer(
   initialState,
   on(PostsActions.getPosts, state => ({...state, status: StatusEnum.LOADING})),
   on(PostsActions.getPostsSuccess, (state, {posts}) => ({...state, posts: posts, status: StatusEnum.SUCCESS})),
-  on(PostsActions.getPostsFailure, (state, {error}) => ({...state, error: error}))
+  on(PostsActions.getPostsFailure, (state, {error}) => ({...state, error: error, status: StatusEnum.ERROR}))
 )

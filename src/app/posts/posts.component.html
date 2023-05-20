@@ -1,2 +1,7 @@
-{{posts$ | async}}
-{{status$ | async}}
+<section class="container">
+  <div class="posts" *ngIf="posts$ | async as posts">
+    <ng-container *ngIf="status$ | async as status">
+    <app-posts-list *ngIf="status === 'SUCCESS'" [posts]="posts"></app-posts-list>
+    </ng-container>
+  </div>
+</section>

@@ -4,6 +4,15 @@ import {PostsState} from "../data/schema/post";
 
 export const selectFeature = (state: AppState) => state.posts;
 
+// export const selectAllPosts = (state: AppState) => state.posts.posts;
+// export const selectAllUsers = (state: AppState) => state.users.users;
+//
+// export const usersHavingPosts = createSelector(
+//   selectAllPosts,
+//   selectAllUsers,
+//   ()
+// )
+
 export const postsSelector = createSelector(
   selectFeature,
   (state: PostsState) => state.posts
