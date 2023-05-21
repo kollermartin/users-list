@@ -1,0 +1,10 @@
+<div class="container">
+  <section class="filtered-posts">
+    <ng-container *ngIf="selectedUser$ | async as selectedUser">
+      <h1 class="filtered-posts__heading">Posts of {{selectedUser.name}}</h1>
+    </ng-container>
+    <ng-container *ngIf="selectUserPosts$ | async as posts">
+      <app-posts-list [posts]="posts"></app-posts-list>
+    </ng-container>
+  </section>
+</div>

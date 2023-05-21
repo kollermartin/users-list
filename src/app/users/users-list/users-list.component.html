@@ -1,7 +1,7 @@
 <section class="users-list">
   <h3 *ngIf="users?.length" class="users-list__heading">Users table</h3>
   <ng-container *ngFor="let user of users">
-    <div class="users-list__cell">
+    <div class="users-list__cell" (click)="onClick(user)">
       <div class="users-list__cell__name">
         {{user.name}}
       </div>

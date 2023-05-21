@@ -7,3 +7,5 @@ export const isLoadingSelector = createSelector(selectFeature, state => state.is
 export const usersSelector = createSelector(selectFeature, state => state.users);
 
 export const errorSelector = createSelector(selectFeature, state => state.error);
+
+export const selectedUserSelector = createSelector(selectFeature, state => state.selectedUser);

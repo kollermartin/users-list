@@ -10,13 +10,13 @@ import {UsersListComponent} from './users/users-list/users-list.component';
 import {HttpClientModule} from "@angular/common/http";
 import {usersReducer} from "./users/state/users.reducer";
 import {UsersEffects} from "./users/state/users.effects";
-import { PostsComponent } from './posts/posts.component';
-import { HomeComponent } from './home/home.component';
+import {PostsComponent} from './posts/posts.component';
+import {HomeComponent} from './home/home.component';
 import {postsReducer} from "./posts/state/posts.reducer";
 import {PostsEffect} from "./posts/state/posts.effect";
-import { PostsListComponent } from './posts/posts-list/posts-list.component';
-import { PostComponent } from './posts/post/post.component';
 import {StoreDevtoolsModule} from "@ngrx/store-devtools";
+import {FilteredUserPostsComponent} from './posts/filtered-user-posts/filtered-user-posts.component';
+import {PostsListComponent} from "./shared/posts-list/posts-list.component";
 
 @NgModule({
   declarations: [
@@ -25,8 +25,7 @@ import {StoreDevtoolsModule} from "@ngrx/store-devtools";
     UsersListComponent,
     PostsComponent,
     HomeComponent,
-    PostsListComponent,
-    PostComponent
+    FilteredUserPostsComponent
   ],
   imports: [
     BrowserModule,
@@ -41,6 +40,7 @@ import {StoreDevtoolsModule} from "@ngrx/store-devtools";
       trace: false, //  If set to true, will include stack trace for every dispatched action, so you can see it in trace tab jumping directly to that part of code
       traceLimit: 75, // maximum stack trace frames to be stored (in case trace option was provided as true)
     }),
+    PostsListComponent,
   ],
   providers: [],
   bootstrap: [AppComponent]
